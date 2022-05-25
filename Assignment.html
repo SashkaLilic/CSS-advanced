@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #box {
+                height: 500px;
+                width: 500px;
+                margin: 0 auto;
+                position: relative;
+                background-color: #050210;
+            }
+            #circle {
+                height: 400px;
+                width: 400px;
+                border-radius: 50%;
+                position: relative;
+                transform: translate(50px, 50px);
+                background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+                animation: animate 1s linear infinite;
+            }
+            @keyframes animate {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+            #circle span {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            }
+            #circle span:nth-child(1) {
+                filter: blur(5px);
+            }
+            #circle span:nth-child(2) {
+                filter: blur(10px);
+            }
+            #circle span:nth-child(3) {
+                filter: blur(25px);
+            }
+            #circle span:nth-child(4) {
+                filter: blur(50px);
+            }
+           
+           #circle::after {
+                content: "";
+                position: absolute;
+                top: 25px;
+                left: 25px;
+                right: 25px;
+                bottom: 25px;
+                border-radius: 50%;
+                background: ;
+                animation: pulse 2s infinite;
+            }
+
+            @keyframes pulse {
+                from {
+                    transform: scale(0.1);
+                    background: rgba(0, 0, 0, 0.2);
+                }
+                to {
+                    transform: scale(0.3);
+                    background: rgba(0, 0, 0, 0.5);
+                }
+                to {
+                    transform: scale(1);
+                    background: rgba(0, 0, 0, 1);
+                }
+            }
+
+            </style>
+            </head>
+        <body>
+           <div id="box">
+               <div id="circle">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                   <div id="cut"></div>
+                </div>
+           </div>
+        </body>
+</html>
