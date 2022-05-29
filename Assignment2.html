@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigmnet2</title>
+    <style>
+    #wrapper {
+        display: flex;
+        max-width: 960px;
+        width: 90%;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    #header {
+        flex-basis: 100%;
+        margin: 0 auto;
+        padding: 8px;
+        font-size: medium;
+        font-family: sans-serif;
+    }
+    #tile {
+        flex-basis: 20%;
+        flex-shrink: 1;
+        border: 1px whitesmoke solid;
+        box-sizing:border-box;
+        padding: 10px;
+        }
+   #tile-background {
+        height: 100px;
+        border-radius: 5% 5% 0% 0%;
+        background-color: rgb(62, 127, 196);
+        background-image: url(placeholder-image.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #tile-text {
+        text-align: center;
+        font-family: sans-serif;
+
+    }
+    p {
+        font-family: sans-serif;
+    }
+
+    @media screen and (max-width: 1024px) {
+            #tile {
+            flex-basis: 33.33%;
+            }
+            }
+            @media screen and (max-width: 768px) {
+            #tile {
+            flex-basis: 50%;
+            }
+            }
+            @media screen and (max-width: 414px) {
+            #tile {
+            flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div id="wrapper">
+        <header id="header">Gallery Heading</header>
+            <div id="tile">
+                <div id="tile-background"></div>
+                <div id="tile-text">Image Title</div>
+            </div>
+            <div id="tile">
+                <div id="tile-background"></div>
+                <div id="tile-text">Image Title</div>
+            </div>
+            <div id="tile">
+                <div id="tile-background"></div>
+                <div id="tile-text">Image Title</div>
+            </div>
+            <div id="tile">
+                <div id="tile-background"></div>
+                <div id="tile-text">Image Title</div>
+            </div>
+            <div id="tile">
+                <div id="tile-background"></div>
+                <div id="tile-text">Image Title</div>
+            </div>
+            <div id="tile">
+                <div id="tile-background"></div>
+                <div id="tile-text">Image Title</div>
+            </div>
+            <div id="tile">
+                <div id="tile-background"></div>
+                <div id="tile-text">Image Title</div>
+            </div>
+            <div id="tile">
+                <div id="tile-background"></div>
+                <div id="tile-text">Image Title</div>
+            </div>
+            <div id="tile">
+                <div id="tile-background"></div>
+                <div id="tile-text">Image Title</div>
+            </div>
+            <div id="tile">
+                <div id="tile-background"></div>
+                <div id="tile-text">Image Title</div>
+        </div>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium varius varius. Duis volutpat elementum neque, sed congue neque luctus ut. Nunc ligula lacus, hendrerit eget urna finibus, tristique ullamcorper nulla. Pellentesque congue laoreet eros. Nunc sit amet ipsum id ex rhoncus ornare quis eu mi. Morbi ac finibus odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis
+                tempus tempor. Etiam at neque sed nisl ornare semper pharetra non sapien. Praesent pellentesque, ipsum a fermentum fermentum, sapien dui pharetra felis, in dictum arcu urna in nibh. Aliquam pulvinar pellentesque nisl, pharetra ultricies mauris auctor vel. Aliquam erat volutpat. Vestibulum suscipit ut ligula finibus semper. In hac habitasse platea dictumst. Fusce ante nisi, auctor vel fermentum sed, tincidunt non ex.</p>
+        </div>
+</body>
+</html>
